@@ -1,0 +1,47 @@
+/* webstudio nav*/
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.current::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--background-accent);
+}
+.main-navigation {
+  display: flex;
+  @extend .list;
+  .nav-link.current {
+    color: var(--text-accent-color);
+  }
+  &__item:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+
+.contacts-navigation {
+  display: flex;
+  @extend .list;
+  margin-left: auto;
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  &__item:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+.contacts-navigation__link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-secondary-color);
+}

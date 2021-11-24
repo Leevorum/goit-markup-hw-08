@@ -1,0 +1,37 @@
+/* regular customers */
+.regular-customers {
+  display: flex;
+  @extend .list;
+  .regular-customers__item {
+    width: 170px;
+    height: 92px;
+  }
+}
+.regular-customers__item {
+  width: 170px;
+  height: 92px;
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+.regular-customers__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  color: var(--background-icon);
+  border: 1px solid var(--background-icon);
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--background-accent);
+    border: 1px solid var(--background-accent);
+  }
+}
+.regular-customers__icon {
+  fill: currentColor;
+}

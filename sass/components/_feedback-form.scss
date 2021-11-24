@@ -1,0 +1,115 @@
+/* modal */
+
+.label-container {
+  position: relative;
+  &:not(:first-child) {
+    margin-top: 28px;
+  }
+}
+
+.modal__label {
+  position: absolute;
+  top: -18px;
+  font-family: var(--main-font-family);
+
+  font-size: 12px;
+  line-height: 1.1666;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.modal__input {
+  width: 448px;
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    cursor: pointer;
+    outline: none;
+    border: 1px solid var(--background-accent);
+  }
+  &:focus ~ .modal__svg,
+  &:hover ~ .modal__svg {
+    cursor: pointer;
+    fill: var(--background-accent);
+  }
+}
+.modal__area-comments {
+  width: 448px;
+  height: 120px;
+  padding: 12px 16px 12px 16px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    cursor: pointer;
+    outline: none;
+    border: 1px solid var(--background-accent);
+  }
+}
+
+.modal__svg {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+
+.license-container {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.license-text {
+  margin-left: 15px;
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--text-secondary-color);
+}
+.license-link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-underline-position: under;
+  text-underline-position: under;
+  color: var(--background-accent);
+}
+.modal__check {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  &:checked + .checkbox-svg {
+    background-image: url("../images/icon-check.svg");
+    background-origin: border-box;
+    background-size: contain;
+    pointer-events: none;
+    fill: var(--background-accent);
+  }
+}
+.checkbox-svg {
+  position: absolute;
+  left: 9px;
+  pointer-events: none;
+}
+
+.modal-send {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+  padding: 10px 55px 10px 56px;
+}

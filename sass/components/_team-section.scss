@@ -1,0 +1,39 @@
+/* our team */
+.team-section {
+  background: var(--third-background-color);
+}
+.team-list {
+  display: flex;
+  @extend .list;
+}
+
+.team-member-card {
+  width: 270px;
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.team-list__member-name {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: var(--secondary-font-size);
+  line-height: 1.172;
+  text-align: center;
+}
+.team-member-card__occupation {
+  margin-bottom: 16px;
+  font-size: var(--secondary-font-size);
+  line-height: 1.172;
+  text-align: center;
+  color: var(--text-secondary-color);
+}
+
+.team-member-card__text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background: var(--mainbackground);
+}
