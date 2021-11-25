@@ -7,7 +7,7 @@
     display: flex;
   }
 }
-.mobile-flex {
+.logo-container {
   @media screen and (max-width: 767px) {
     display: flex;
     justify-content: space-between;
@@ -19,6 +19,7 @@
 .menu-container {
   @media screen and (max-width: 767px) {
     display: none;
+
     position: absolute;
     top: 0;
     left: 0;
@@ -26,7 +27,12 @@
     right: 0;
     background-color: var(--mainbackground);
     &.is-open {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &__link {
+      color: var(--text-accent-color);
     }
   }
   @media screen and (min-width: 768px) {
@@ -53,11 +59,6 @@
     display: none;
   }
 }
-.mobilie-menu-socials {
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
 
 .navigation {
   // display: flex;
@@ -74,31 +75,67 @@
 //   border-radius: 2px;
 //   background-color: var(--background-accent);
 // }
-// .main-navigation {
-//   display: flex;
-//   @extend .list;
-//   .nav-link.current {
-//     color: var(--text-accent-color);
-//   }
-//   &__item:not(:first-child) {
-//     margin-left: 50px;
-//   }
-// }
+.contacts-container {
+  // margin-top: 306px;
+  padding-left: 15px;
+}
+.main-navigation {
+  @extend .list;
+  .nav-link.current {
+    color: var(--text-accent-color);
+  }
+  @media screen and (max-width: 767px) {
+    padding-top: 48px;
+    &__item:not(:first-child) {
+      margin-top: 32px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
 
-// .contacts-navigation {
-//   display: flex;
-//   @extend .list;
-//   margin-left: auto;
-//   &__icon {
-//     margin-right: 10px;
-//     fill: currentColor;
-//   }
-//   &__item:not(:first-child) {
-//     margin-left: 50px;
-//   }
-// }
+    &__item:not(:first-child) {
+      margin-left: 50px;
+    }
+  }
+}
+
+.contacts-navigation {
+  @extend .list;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: auto;
+    &__icon {
+      margin-right: 10px;
+      fill: currentColor;
+    }
+    &__item:not(:first-child) {
+      margin-left: 50px;
+    }
+  }
+}
 // .contacts-navigation__link {
 //   display: inline-flex;
 //   align-items: center;
 //   color: var(--text-secondary-color);
 // }
+.contacts-navigation__icon {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.mobilie-menu-socials {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222;
+
+  letter-spacing: 0.02em;
+
+  color: var(--text-accent-color);
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
