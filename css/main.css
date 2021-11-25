@@ -22,11 +22,6 @@ body {
   color: var(--text-primary-color);
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .fix-padding-bottom {
   padding-bottom: 0;
 }
@@ -47,14 +42,6 @@ img {
   display: block;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,7 +52,7 @@ img {
   text-decoration: none;
 }
 
-.list, .main-navigation, .contacts-navigation {
+.list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -85,18 +72,8 @@ img {
   overflow: hidden;
 }
 
-.section-heading {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-
 .nav-link {
-  position: relative;
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   font-size: var(--main-font-size);
   line-height: 1.172;
@@ -115,70 +92,73 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.nav-container {
+  position: relative;
 }
 
-.current::after {
-  content: "";
+@media screen and (min-width: 768px) {
+  .nav-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--mainbackground);
+  }
+  .menu-container.is-open {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.menu-btn {
   position: absolute;
-  display: block;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--background-accent);
-}
-
-.main-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.main-navigation .nav-link.current {
-  color: var(--text-accent-color);
-}
-
-.main-navigation__item:not(:first-child) {
-  margin-left: 50px;
-}
-
-.contacts-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-}
-
-.contacts-navigation__icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.contacts-navigation__item:not(:first-child) {
-  margin-left: 50px;
-}
-
-.contacts-navigation__link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: var(--text-secondary-color);
+  right: 15px;
+  top: 10px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.menu-btn .menu-btn__close {
+  display: none;
+}
+
+.menu-btn.is-open .menu-btn__close {
+  display: block;
+}
+
+.menu-btn.is-open .menu-btn__menu {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
 }
 
 .logo {
   display: block;
-  margin-right: 93px;
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
@@ -193,35 +173,6 @@ img {
 
 .logo__color {
   color: var(--text-accent-color);
-}
-
-/* Studio page */
-.hero-section {
-  background: var(--second-background-color);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero_background.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_background.jpg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
-.hero-section__heading {
-  max-width: 696px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  text-align: center;
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1.364;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--mainbackground);
 }
 
 .main-btn {
@@ -242,5 +193,12 @@ img {
 
 .main-btn:focus, .main-btn:hover {
   background: var(--background-accent);
+}
+
+/* what we do */
+@media screen and (max-width: 767px) {
+  .works-section {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
