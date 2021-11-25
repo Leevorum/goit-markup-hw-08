@@ -72,6 +72,13 @@ img {
   overflow: hidden;
 }
 
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .nav-link {
   display: block;
   font-weight: 500;
@@ -92,10 +99,6 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.nav-container {
-  position: relative;
-}
-
 @media screen and (min-width: 768px) {
   .nav-container {
     display: -webkit-box;
@@ -105,12 +108,29 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .mobile-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .menu-container {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
-    width: 100%;
+    bottom: 0;
+    right: 0;
     background-color: var(--mainbackground);
   }
   .menu-container.is-open {
@@ -127,16 +147,14 @@ img {
 }
 
 .menu-btn {
-  position: absolute;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  right: 15px;
-  top: 10px;
   margin: 0;
   padding: 0;
   border: 0;
   background-color: transparent;
+  z-index: 999;
 }
 
 .menu-btn .menu-btn__close {
@@ -153,6 +171,12 @@ img {
 
 @media screen and (min-width: 768px) {
   .menu-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobilie-menu-socials {
     display: none;
   }
 }

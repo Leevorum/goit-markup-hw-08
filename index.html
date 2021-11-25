@@ -21,29 +21,33 @@
     <header class="header">
       <!-- navigation -->
       <div class="container nav-container">
-        <a class="logo" href="./"><span class="logo__color">Web</span>Studio</a>
-        <button
-          class="menu-btn"
-          type="button"
-          aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button
-        >
-          <svg
-            width="40px"
-            height="40px"
-            aria-label="Переключатель мобильного меню"
+        <div class="mobile-flex">
+          <a class="logo" href="./"
+            ><span class="logo__color">Web</span>Studio</a
           >
-            <use
-              class="menu-btn__menu"
-              href="./images/icons.svg#nav-menu"
-            ></use>
-            <use
-              class="menu-btn__close"
-              href="./images/icons.svg#close-menu"
-            ></use>
-          </svg>
-        </button>
+          <button
+            class="menu-btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="menu-btn__menu"
+                href="./images/icons.svg#nav-menu"
+              ></use>
+              <use
+                class="menu-btn__close"
+                href="./images/icons.svg#close-menu"
+              ></use>
+            </svg>
+          </button>
+        </div>
         <div class="menu-container" id="menu-container" data-menu>
           <nav class="navigation">
             <ul class="main-navigation">
