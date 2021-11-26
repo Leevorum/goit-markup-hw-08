@@ -1,5 +1,5 @@
 .section {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     padding-bottom: 60px;
     padding-top: 60px;
   }
@@ -14,7 +14,7 @@
   margin-right: auto;
 }
 .section-heading {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     font-weight: 700;
     font-size: 28px;
     line-height: 33px;
