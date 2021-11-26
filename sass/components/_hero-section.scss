@@ -8,26 +8,46 @@
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/hero_background.jpg");
-
+  max-width: 1600px;
   background-repeat: no-repeat;
   background-position-x: center;
-  max-width: 1600px;
+  background-size: cover;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  // padding-top: 200px;
-  // padding-bottom: 200px;
   &__heading {
-    max-width: 696px;
     margin-left: auto;
     margin-right: auto;
-    // margin-bottom: 30px;
+    margin-bottom: 30px;
     text-align: center;
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1.364;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--mainbackground);
+  }
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/hero_background_450.jpeg");
+
+    padding-top: 118px;
+    padding-bottom: 118px;
+    &__heading {
+      max-width: 360px;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.615;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    &__heading {
+      font-size: 44px;
+      font-weight: 900;
+      line-height: 1.364;
+    }
   }
 }
