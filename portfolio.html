@@ -131,36 +131,51 @@
       <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Примеры наших работ</h1>
-          <ul class="filter-list">
-            <li class="filter-list__item">
-              <button class="filter-list__btn blue-btn" type="button">
-                Все
-              </button>
-            </li>
-            <li class="filter-list__item">
-              <button class="filter-list__btn" type="button">Веб-сайты</button>
-            </li>
-            <li class="filter-list__item">
-              <button class="filter-list__btn" type="button">Приложения</button>
-            </li>
-            <li class="filter-list__item">
-              <button class="filter-list__btn" type="button">Дизайн</button>
-            </li>
-            <li class="filter-list__item">
-              <button class="filter-list__btn" type="button">Маркетинг</button>
-            </li>
-          </ul>
+          <div class="filter-container">
+            <ul class="filter-list">
+              <li class="filter-list__item">
+                <button class="filter-list__btn blue-btn" type="button">
+                  Все
+                </button>
+              </li>
+              <li class="filter-list__item">
+                <button class="filter-list__btn" type="button">
+                  Веб-сайты
+                </button>
+              </li>
+              <li class="filter-list__item">
+                <button class="filter-list__btn" type="button">
+                  Приложения
+                </button>
+              </li>
+              <li class="filter-list__item">
+                <button class="filter-list__btn" type="button">Дизайн</button>
+              </li>
+              <li class="filter-list__item">
+                <button class="filter-list__btn" type="button">
+                  Маркетинг
+                </button>
+              </li>
+            </ul>
+          </div>
 
           <ul class="works">
             <li class="portfolio-card">
               <a class="portfolio-card__link link" href="#"
                 ><div class="portfolio-card__thumb">
-                  <img
-                    src="./images/techcrak.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/techcrak_450.jpeg    1x,
+                        ./images/techcrak_450_x2.jpeg 2x,
+                        ./images/techcrak_768.jpeg    1x,
+                        ./images/techcrak_768_x2.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img src="./images/techcrak.jpg" alt="Технокряк" />
+                  </picture>
+
                   <div class="portfolio-card__overlay">
                     <p>
                       Технокряк это современная площадка распространения
@@ -179,12 +194,22 @@
             <li class="portfolio-card">
               <a class="portfolio-card__link link" href="#"
                 ><div class="portfolio-card__thumb">
-                  <img
-                    src="./images/posterorlean.jpg"
-                    alt="Постер баскетбольных команд"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/posterorlean_450.jpeg    1x,
+                        ./images/posterorlean_450_x2.jpeg 2x,
+                        ./images/posterorlean_768.jpeg    1x,
+                        ./images/posterorlean_768_x2.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/posterorlean.jpg"
+                      alt="Постер баскетбольных команд"
+                    />
+                  </picture>
+
                   <div class="portfolio-card__overlay">
                     <p>
                       Технокряк это современная площадка распространения
@@ -205,12 +230,19 @@
             <li class="portfolio-card">
               <a class="portfolio-card__link link" href="#"
                 ><div class="portfolio-card__thumb">
-                  <img
-                    src="./images/seafood.jpg"
-                    alt="Рыбный ресторан"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/seafood_450.jpeg    1x,
+                        ./images/seafood_450_x2.jpeg 2x,
+                        ./images/seafood_768.jpeg    1x,
+                        ./images/seafood_768_x2.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img src="./images/seafood.jpg" alt="Рыбный ресторан" />
+                  </picture>
+
                   <div class="portfolio-card__overlay">
                     <p>
                       Технокряк это современная площадка распространения
@@ -229,12 +261,19 @@
             <li class="portfolio-card">
               <a class="portfolio-card__link link" href="#"
                 ><div class="portfolio-card__thumb">
-                  <img
-                    src="./images/prime.jpg"
-                    alt="Проект Прайм"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/prime_450.jpeg    1x,
+                        ./images/prime_450_x2.jpeg 2x,
+                        ./images/prime_768.jpeg    1x,
+                        ./images/prime_768_x2.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img src="./images/prime.jpg" alt="Проект Прайм" />
+                  </picture>
+
                   <div class="portfolio-card__overlay">
                     <p>
                       Технокряк это современная площадка распространения
@@ -253,12 +292,19 @@
             <li class="portfolio-card">
               <a class="portfolio-card__link link" href="#"
                 ><div class="portfolio-card__thumb">
-                  <img
-                    src="./images/boxes.jpg"
-                    alt="Проект Коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/boxes_450.jpeg    1x,
+                        ./images/boxes_450_x2.jpeg 2x,
+                        ./images/boxes_768.jpeg    1x,
+                        ./images/boxes_768_x2.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img src="./images/boxes.jpg" alt="Проект Коробки" />
+                  </picture>
+
                   <div class="portfolio-card__overlay">
                     <p>
                       Технокряк это современная площадка распространения
@@ -277,12 +323,23 @@
             <li class="portfolio-card">
               <a class="portfolio-card__link link" href="#"
                 ><div class="portfolio-card__thumb">
-                  <img
-                    src="./images/inspiration.jpg"
-                    alt="Вдохновение без границ "
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/inspiration_450.jpeg    1x,
+                        ./images/inspiration_450_x2.jpeg 2x,
+                        ./images/inspiration_768.jpeg    1x,
+                        ./images/inspiration_768_x2.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/inspiration.jpg"
+                      alt="Вдохновение без границ "
+                    />
+                  </picture>
+
                   <div class="portfolio-card__overlay">
                     <p>
                       Технокряк это современная площадка распространения
@@ -303,12 +360,23 @@
             <li class="portfolio-card">
               <a class="portfolio-card__link link" href="#"
                 ><div class="portfolio-card__thumb">
-                  <img
-                    src="./images/limitededition.jpg"
-                    alt="Ограниченое издание"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/limitededition_450.jpeg    1x,
+                        ./images/limitededition_450_x2.jpeg 2x,
+                        ./images/limitededition_768.jpeg    1x,
+                        ./images/limitededition_768_x2.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/limitededition.jpg"
+                      alt="Ограниченое издание"
+                    />
+                  </picture>
+
                   <div class="portfolio-card__overlay">
                     <p>
                       Технокряк это современная площадка распространения
@@ -329,12 +397,19 @@
             <li class="portfolio-card">
               <a class="portfolio-card__link link" href="#"
                 ><div class="portfolio-card__thumb">
-                  <img
-                    src="./images/lab.jpg"
-                    alt="Проект ЛАБ"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/lab_450.jpeg    1x,
+                        ./images/lab_450_x2.jpeg 2x,
+                        ./images/lab_768.jpeg    1x,
+                        ./images/lab_768_x2.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img src="./images/lab.jpg" alt="Проект ЛАБ" />
+                  </picture>
+
                   <div class="portfolio-card__overlay">
                     <p>
                       Технокряк это современная площадка распространения
@@ -353,12 +428,22 @@
             <li class="portfolio-card">
               <a class="portfolio-card__link link" href="#"
                 ><div class="portfolio-card__thumb">
-                  <img
-                    src="./images/growingbusiness.jpg"
-                    alt="Растущий бизнес"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/growingbusiness_450.jpeg    1x,
+                        ./images/growingbusiness_450_x2.jpeg 2x,
+                        ./images/growingbusiness_768.jpeg    1x,
+                        ./images/growingbusiness_768_x2.jpeg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/growingbusiness.jpg"
+                      alt="Растущий бизнес"
+                    />
+                  </picture>
+
                   <div class="portfolio-card__overlay">
                     <p>
                       Технокряк это современная площадка распространения
@@ -380,8 +465,8 @@
     </main>
     <!-- footer -->
     <footer class="footer-nav">
-      <div class="container flex footer-nav__baseline">
-        <div>
+      <div class="container footer-nav__container footer-nav__baseline">
+        <div class="footer-adress-container">
           <a class="logo footer-nav__margin" href="./"
             ><span class="logo__color">Web</span
             ><span class="footer-nav__logo">Studio</span></a
