@@ -1,12 +1,17 @@
 /* footer */
 .footer-nav__container {
-  display: flex;
+  // display: flex;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .footer-nav {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  // padding-top: 60px;
+  // padding-bottom: 60px;
   background: var(--second-background-color);
 }
 .footer-nav__margin {
@@ -32,6 +37,7 @@
 .footer-nav__links {
   padding: 0;
   margin: 0;
+  font-size: var(--main-font-size);
   line-height: 1.71;
   color: #ffffff99;
   font-style: normal;
@@ -48,41 +54,53 @@
   .socials-list__link:focus {
     background: var(--background-accent);
   }
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
 }
 // .footer-nav__baseline {
 //   align-items: baseline;
 // }
 
 .form-container {
-  margin-left: 93px;
+  // margin-left: 93px;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
 }
 .join-us {
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: var(--main-font-size);
   color: var(--mainbackground);
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1.172;
 }
 .sign-form {
-  display: flex;
+  // display: flex;
 }
 .sign-form__email {
   background-color: var(--second-background-color);
-  width: 358px;
+  // width: 358px;
   height: 50px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   box-sizing: border-box;
   color: var(--third-background-color);
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 }
 .sign-form__btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  margin-left: 12px;
+  // margin-left: 12px;
   padding-left: 29px;
   padding-right: 28px;
+  @media screen and(max-width:767px) {
+    margin-top: 20px;
+  }
 }
 
 .sign-form__svg {
