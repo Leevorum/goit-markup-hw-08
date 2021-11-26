@@ -1,4 +1,8 @@
 .section {
+  @media screen and (max-width: 767px) {
+    // padding-bottom: 60px;
+    padding-top: 60px;
+  }
   // padding-top: 94px;
   // padding-bottom: 94px;
 }
@@ -10,8 +14,14 @@
   margin-right: auto;
 }
 .section-heading {
+  @media screen and (max-width: 767px) {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 30px;
+  }
   // margin-bottom: 50px;
   // font-size: 36px;
   // line-height: 1.17;
-  // text-align: center;
+  text-align: center;
 }

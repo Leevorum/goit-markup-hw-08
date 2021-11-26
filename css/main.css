@@ -22,10 +22,6 @@ body {
   color: var(--text-primary-color);
 }
 
-.fix-padding-bottom {
-  padding-bottom: 0;
-}
-
 h1,
 h2,
 h3,
@@ -52,7 +48,7 @@ img {
   text-decoration: none;
 }
 
-.list, .main-navigation, .contacts-navigation, .mobile-menu-socials {
+.list, .main-navigation, .contacts-navigation, .mobile-menu-socials, .advantages, .team-list, .socials-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -72,11 +68,30 @@ img {
   overflow: hidden;
 }
 
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: 60px;
+  }
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .section-heading {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 30px;
+  }
 }
 
 .nav-link {
@@ -404,6 +419,13 @@ img {
   }
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero_background_450_x2.jpeg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_background_450_x2.jpeg");
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero-section {
     padding-top: 200px;
@@ -436,10 +458,120 @@ img {
   background: var(--background-accent);
 }
 
+/* advantages */
+@media screen and (min-width: 768px) {
+  .advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.advantages__icon {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.advantages__icon-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--third-background-color);
+}
+
+@media screen and (max-width: 767px) {
+  .advantages__icon-bg {
+    width: 450px;
+  }
+}
+
+.advantages__heading {
+  margin-bottom: 10px;
+  font-size: var(--main-font-size);
+  line-height: 1.142;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .advantages__heading {
+    text-align: center;
+  }
+}
+
+.advantages__text {
+  font-size: var(--main-font-size);
+  line-height: 1.71;
+  color: var(--text-secondary-color);
+}
+
 /* what we do */
 @media screen and (max-width: 767px) {
   .works-section {
     display: none;
   }
+}
+
+/* our team */
+.team-section {
+  background: var(--third-background-color);
+}
+
+.team-member-card__text {
+  border-radius: 0px 0px 4px 4px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background: var(--mainbackground);
+}
+
+.socials-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.socials-list__item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.socials-list__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--background-icon);
+  -webkit-transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials-list__link:hover, .socials-list__link:focus {
+  background: var(--background-accent);
+  color: var(--mainbackground);
+}
+
+.socials-list__icon {
+  fill: currentColor;
 }
 /*# sourceMappingURL=main.css.map */

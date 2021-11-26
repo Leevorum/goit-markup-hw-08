@@ -1,13 +1,15 @@
 /* advantages */
 .advantages {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
   @extend .list;
 }
 .advantages__item {
-  width: 270px;
-  &:not(:first-child) {
-    margin-left: 30px;
-  }
+  // width: 270px;
+  // &:not(:first-child) {
+  //   margin-left: 30px;
+  // }
 }
 
 .advantages__icon {
@@ -22,12 +24,18 @@
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--third-background-color);
+  @media screen and(max-width:767px) {
+    width: 450px;
+  }
 }
 .advantages__heading {
   margin-bottom: 10px;
   font-size: var(--main-font-size);
-  line-height: 1.1;
+  line-height: 1.142;
   text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 .advantages__text {
   font-size: var(--main-font-size);
