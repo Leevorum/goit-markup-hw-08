@@ -526,6 +526,12 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .team-section {
+    max-width: 767px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .team-member-card {
     width: 450px;
   }
@@ -560,6 +566,7 @@ img {
 
 @media screen and (max-width: 1200px) {
   .team-member-card__text {
+    width: 450px;
     padding-bottom: 24px;
   }
 }

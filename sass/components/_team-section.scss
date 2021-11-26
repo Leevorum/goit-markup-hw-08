@@ -1,6 +1,9 @@
 /* our team */
 .team-section {
   background: var(--third-background-color);
+  @media screen and (max-width: 767px) {
+    max-width: 767px;
+  }
 }
 .team-list {
   // display: flex;
@@ -37,6 +40,7 @@
 
 .team-member-card__text {
   @media screen and (max-width: 1200px) {
+    width: 450px;
     padding-bottom: 24px;
   }
   padding-top: 30px;
