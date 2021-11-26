@@ -8,7 +8,7 @@
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/hero_background.jpg");
-  max-width: 1600px;
+  // max-width: 1600px;
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: cover;
@@ -31,7 +31,8 @@
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/hero_background_450.jpeg");
-
+    min-width: 450px;
+    max-width: 767px;
     padding-top: 118px;
     padding-bottom: 118px;
     &__heading {
@@ -50,6 +51,8 @@
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/hero_background_450_x2.jpeg");
+    min-width: 450px;
+    max-width: 767px;
   }
   @media screen and (min-width: 768px) {
     padding-top: 200px;

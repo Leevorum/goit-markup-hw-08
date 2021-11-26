@@ -2,6 +2,7 @@
 .team-section {
   background: var(--third-background-color);
   @media screen and (max-width: 767px) {
+    min-width: 450px;
     max-width: 767px;
   }
 }

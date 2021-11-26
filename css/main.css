@@ -75,8 +75,6 @@ img {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -385,7 +383,6 @@ img {
   background: var(--second-background-color);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero_background.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_background.jpg");
-  max-width: 1600px;
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: cover;
@@ -408,6 +405,8 @@ img {
   .hero-section {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero_background_450.jpeg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_background_450.jpeg");
+    min-width: 450px;
+    max-width: 767px;
     padding-top: 118px;
     padding-bottom: 118px;
   }
@@ -423,6 +422,8 @@ img {
   .hero-section {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero_background_450_x2.jpeg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_background_450_x2.jpeg");
+    min-width: 450px;
+    max-width: 767px;
   }
 }
 
@@ -527,6 +528,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .team-section {
+    min-width: 450px;
     max-width: 767px;
   }
 }
