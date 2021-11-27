@@ -394,7 +394,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-navigation__link {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
