@@ -7,18 +7,20 @@
   }
   @media screen and (min-width: 1200px) {
     display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 .footer-nav {
   margin-left: auto;
   margin-right: auto;
-  // padding-top: 60px;
-  // padding-bottom: 60px;
+
   background: var(--second-background-color);
 }
 .footer-flex-container {
   @media screen and (min-width: 768px) {
     display: flex;
+    align-items: baseline;
     justify-content: space-around;
   }
 }
@@ -52,7 +54,6 @@
 }
 
 .footer-socials {
-  // margin-left: 70px;
   .socials-list__link {
     background: rgba(255, 255, 255, 0.1);
     color: var(--mainbackground);
@@ -65,15 +66,22 @@
   @media screen and (max-width: 767px) {
     margin-top: 60px;
   }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
-// .footer-nav__baseline {
-//   align-items: baseline;
-// }
+.footer-nav__baseline {
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+  }
+}
 
 .form-container {
-  // margin-left: 93px;
   @media screen and (max-width: 1199px) {
     margin-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
   }
 }
 .join-us {
@@ -87,13 +95,16 @@
 
 .sign-form {
   display: flex;
-  flex-direction: column;
+
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+  }
 }
 .sign-form__email {
   background-color: var(--second-background-color);
-  // width: 358px;
+
   height: 50px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -106,15 +117,21 @@
   @media screen and (max-width: 1199px) {
     width: 450px;
   }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 .sign-form__btn {
   display: inline-flex;
   align-items: center;
-  // margin-left: 12px;
+
   padding-left: 29px;
   padding-right: 28px;
   @media screen and(max-width:1199px) {
     margin-top: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
   }
 }
 
