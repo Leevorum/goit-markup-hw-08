@@ -7,9 +7,6 @@ body {
   color: var(--text-primary-color);
 }
 
-// .fix-padding-bottom {
-//   padding-bottom: 0;
-// }
 h1,
 h2,
 h3,
@@ -47,4 +44,9 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+@media screen and (min-width: 1200px) {
+  .fix-padding-bottom {
+    padding-bottom: 0;
+  }
 }
