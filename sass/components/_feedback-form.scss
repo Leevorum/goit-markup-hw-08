@@ -36,7 +36,7 @@
     cursor: pointer;
     fill: var(--background-accent);
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     width: 370px;
   }
 }
@@ -55,7 +55,7 @@
     outline: none;
     border: 1px solid var(--background-accent);
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     width: 370px;
   }
 }
@@ -79,7 +79,7 @@
   // font-size: 14px;
   // line-height: 1.71;
   color: var(--text-secondary-color);
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.03em;
@@ -115,7 +115,7 @@
   position: absolute;
   // left: 8px;
   pointer-events: none;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     left: 1px;
   }
 }

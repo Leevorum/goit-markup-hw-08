@@ -1,7 +1,7 @@
 /* footer */
 .footer-nav__container {
   // display: flex;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -13,6 +13,12 @@
   // padding-top: 60px;
   // padding-bottom: 60px;
   background: var(--second-background-color);
+}
+.footer-flex-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 .footer-nav__margin {
   margin-bottom: 20px;
@@ -64,7 +70,7 @@
 
 .form-container {
   // margin-left: 93px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     margin-top: 60px;
   }
 }
@@ -76,8 +82,12 @@
   font-weight: 700;
   line-height: 1.172;
 }
+
 .sign-form {
-  // display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .sign-form__email {
   background-color: var(--second-background-color);
@@ -91,6 +101,9 @@
   @media screen and (max-width: 767px) {
     width: 100%;
   }
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+  }
 }
 .sign-form__btn {
   display: inline-flex;
@@ -98,7 +111,7 @@
   // margin-left: 12px;
   padding-left: 29px;
   padding-right: 28px;
-  @media screen and(max-width:767px) {
+  @media screen and(max-width:1199px) {
     margin-top: 20px;
   }
 }
