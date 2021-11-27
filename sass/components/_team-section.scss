@@ -12,11 +12,13 @@
   }
 }
 .team-list {
-  // display: flex;
   @extend .list;
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 .team-member-image {
@@ -29,7 +31,7 @@
       margin-bottom: 30px;
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 354px;
     margin-top: 30px;
     margin-left: 30px;

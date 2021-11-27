@@ -7,21 +7,24 @@
   @media screen and (max-width: 1199px) {
     flex-wrap: wrap;
   }
-  // .regular-customers__item {
-  //   width: 170px;
-  //   height: 92px;
-  // }
+  @media screen and (min-width: 1200px) {
+    .regular-customers__item {
+      width: 170px;
+      height: 92px;
+    }
+  }
 }
 .regular-customers__item {
   @media screen and (max-width: 1199px) {
     margin-top: 30px;
     margin-left: 30px;
   }
-  // width: 170px;
-  // height: 92px;
-  // &:not(:first-child) {
-  //   margin-left: 30px;
-  // }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 92px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
 }
 .regular-customers__links {
   display: flex;
