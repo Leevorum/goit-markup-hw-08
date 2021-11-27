@@ -226,7 +226,7 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 481px) {
   .menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
