@@ -758,7 +758,7 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .team-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -838,7 +838,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .team-member-card__text {
     width: 354px;
   }
