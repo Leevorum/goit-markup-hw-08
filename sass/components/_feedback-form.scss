@@ -36,7 +36,7 @@
     fill: var(--background-accent);
   }
   @media screen and (max-width: 1199px) {
-    width: 370px;
+    max-width: 370px;
   }
   @media screen and (min-width: 1200px) {
     width: 448px;
@@ -57,7 +57,7 @@
     border: 1px solid var(--background-accent);
   }
   @media screen and (max-width: 1199px) {
-    width: 370px;
+    max-width: 370px;
   }
   @media screen and (min-width: 1200px) {
     width: 448px;
