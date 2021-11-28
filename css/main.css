@@ -184,6 +184,9 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -633,7 +636,7 @@ img {
 }
 
 .advantages__item {
-  max-width: 450px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -668,7 +671,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 450px;
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--third-background-color);
@@ -758,6 +761,21 @@ img {
   background: var(--third-background-color);
 }
 
+@media screen and (max-width: 767px) {
+  .team-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-section {
     margin-top: -30px;
@@ -799,7 +817,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-member-card {
-    max-width: 354px;
+    max-width: 100%;
     margin-top: 30px;
     margin-left: 30px;
   }
@@ -841,13 +859,13 @@ img {
 
 @media screen and (max-width: 480px) {
   .team-member-card__text {
-    max-width: 450px;
+    max-width: 100%;
   }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .team-member-card__text {
-    width: 354px;
+    width: 100%;
   }
 }
 
@@ -901,10 +919,27 @@ img {
 }
 
 /* regular customers */
+@media screen and (max-width: 767px) {
+  .customer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .regular-customers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: -30px;
 }
 
@@ -1073,6 +1108,9 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
