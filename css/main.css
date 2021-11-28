@@ -62,12 +62,19 @@
 }
 
 /* utilities and resets */
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   padding: 0;
   margin: 0;
   font-family: var(--main-font-family);
   letter-spacing: 0.03em;
   color: var(--text-primary-color);
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 h1,
