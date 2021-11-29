@@ -481,6 +481,7 @@ img {
     font-size: 24px;
     line-height: 1.1666;
     letter-spacing: 0.02em;
+    color: var(--text-secondary-color);
   }
   .mobile-menu-socials__item:not(:first-child) {
     margin-left: 10px;
@@ -488,6 +489,15 @@ img {
   .mobile-menu-socials__item:not(:first-child) {
     padding-left: 10px;
     border-left: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .mobile-menu-socials__link {
+    font-size: 13px;
+  }
+  .mobile-menu-socials__tel {
+    font-size: 30px;
   }
 }
 

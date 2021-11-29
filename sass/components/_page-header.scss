@@ -199,6 +199,7 @@
 .mobile-menu-socials {
   @extend .list;
   display: flex;
+
   @media screen and (max-width: 767px) {
     &__link {
       font-weight: 500;
@@ -220,6 +221,7 @@
       font-size: 24px;
       line-height: 1.1666;
       letter-spacing: 0.02em;
+      color: var(--text-secondary-color);
     }
     &__item:not(:first-child) {
       margin-left: 10px;
@@ -227,6 +229,14 @@
     &__item:not(:first-child) {
       padding-left: 10px;
       border-left: 1px solid rgba(33, 33, 33, 0.2);
+    }
+  }
+  @media screen and (max-width: 330px) {
+    &__link {
+      font-size: 13px;
+    }
+    &__tel {
+      font-size: 30px;
     }
   }
   @media screen and (min-width: 768px) {
