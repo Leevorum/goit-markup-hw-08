@@ -11,4 +11,11 @@
 
     mobileMenuRef.classList.toggle("is-open");
   });
+   function toggleModal() {
+    refs.modal.classList.toggle('is-open');
+
+    const isModalClose = refs.modal.classList.contains("is-open");
+    const method = isModalClose ? "disableBodyScroll" : "enableBodyScroll";
+    bodyScrollLock[method](refs.modal);
+  }
 }) ();

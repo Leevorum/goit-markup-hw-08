@@ -244,6 +244,7 @@ img {
     background-color: var(--mainbackground);
   }
   .menu-container.is-open {
+    z-index: 5;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
