@@ -67,6 +67,11 @@ body {
   overflow-x: hidden;
 }
 
+.stop-scroll {
+  overflow: hidden;
+  position: fixed;
+}
+
 body {
   padding: 0;
   margin: 0;

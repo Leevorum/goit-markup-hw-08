@@ -1,7 +1,6 @@
 /* portfolio */
 /* filter buttons */
-.filter-container {
-}
+
 .filter-list {
   @extend .list;
   display: flex;
@@ -15,6 +14,9 @@
   // }
   margin-top: -15px;
   margin-left: -8px;
+  // @media screen and (min-width: 480px) and (max-width: 767px) {
+  //   justify-content: center;
+  // }
   @media screen and (max-width: 767px) {
     &__item {
       margin-top: 15px;
