@@ -236,7 +236,7 @@ img {
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
@@ -254,6 +254,7 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    overflow-y: hidden;
   }
   .menu-container__link {
     color: var(--text-accent-color);
@@ -293,6 +294,12 @@ img {
   border: 0;
   background-color: transparent;
   z-index: 10;
+}
+
+.menu-btn.is-open {
+  position: fixed;
+  right: 15px;
+  top: 16px;
 }
 
 .menu-btn .menu-btn__close {

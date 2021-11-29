@@ -41,12 +41,13 @@
     left: 0;
     bottom: 0;
     right: 0;
-    
+
     background-color: var(--mainbackground);
     &.is-open {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      overflow-y: hidden;
     }
     &__link {
       color: var(--text-accent-color);
@@ -63,13 +64,21 @@
     align-items: center;
   }
 }
+
 .menu-btn {
+  // position: fixed;
   display: inline-flex;
+  // right: 23px;
   margin: 0;
   padding: 0;
   border: 0;
   background-color: transparent;
   z-index: 10;
+  &.is-open {
+    position: fixed;
+    right: 15px;
+    top: 16px;
+  }
   & .menu-btn__close {
     display: none;
   }
