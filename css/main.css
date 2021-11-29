@@ -1300,6 +1300,12 @@ img {
           transform: translate(-50%, -50%) scale(0.8);
 }
 
+@media (orientation: landscape) {
+  .backdrop {
+    padding-top: 400px;
+  }
+}
+
 .modal {
   position: relative;
   top: 50%;
