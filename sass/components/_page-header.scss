@@ -43,7 +43,7 @@
     right: 0;
     background-color: var(--mainbackground);
     &.is-open {
-      display: flex;
+      display: fixed;
       flex-direction: column;
       justify-content: space-between;
     }
