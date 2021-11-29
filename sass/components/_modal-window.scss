@@ -14,7 +14,7 @@
   }
   overflow-y: scroll;
   z-index: 20;
-  @media (orientation: landscape) {
+  @media screen and (orientation: landscape) and (max-height: 609px) {
     padding-top: 400px;
   }
 }
