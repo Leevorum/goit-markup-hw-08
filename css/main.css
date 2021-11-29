@@ -1132,6 +1132,12 @@ img {
 }
 
 /* works */
+@media screen and (max-width: 767px) {
+  .works-container {
+    max-width: 480px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .works-container {
     width: 768px;
@@ -1147,6 +1153,17 @@ img {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+}
+
+@media screen and (max-width: 767px) {
+  .works {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1179,6 +1196,9 @@ img {
 @media screen and (max-width: 767px) {
   .portfolio-card {
     width: 100%;
+  }
+  .portfolio-card:not(:first-child) {
+    margin-top: 30px;
   }
 }
 
