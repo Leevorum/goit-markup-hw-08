@@ -81,7 +81,6 @@ body {
 }
 
 .stop-scroll {
-  overflow: hidden;
   position: fixed;
 }
 
