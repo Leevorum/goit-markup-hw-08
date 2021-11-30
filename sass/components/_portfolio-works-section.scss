@@ -78,6 +78,10 @@
   overflow: hidden;
 }
 .portfolio-card__overlay {
+  @media screen and (max-width: 400px) {
+    padding: 24px;
+    font-size: 16px;
+  }
   @media screen and (max-width: 480px) {
     padding-top: 77px;
     padding-bottom: 77px;
