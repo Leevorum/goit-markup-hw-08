@@ -1,9 +1,5 @@
 /* advantages */
-.advantages-container {
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    width: 768px;
-  }
-}
+
 .advantages {
   @extend .list;
   @media screen and (min-width: 768px) and (max-width: 1199px) {

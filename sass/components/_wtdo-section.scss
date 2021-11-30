@@ -1,21 +1,21 @@
 /* what we do */
 @media screen and (max-width: 1199px) {
-  .works-section {
+  .applications-section {
     display: none;
   }
 }
-.works {
+.applications {
   display: flex;
   @extend .list;
 }
-.works__card {
+.applications__card {
   position: relative;
   &:not(:first-child) {
     margin-left: 30px;
   }
 }
 
-.works__overlay {
+.applications__overlay {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,7 @@
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
 }
-.works__overlay-item {
+.applications__overlay-item {
   font-family: var(--main-font-family);
   font-weight: 700;
   font-size: 14px;

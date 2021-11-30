@@ -123,7 +123,7 @@ img {
   text-decoration: none;
 }
 
-.list, .main-navigation, .contacts-navigation, .mobile-menu-socials, .advantages, .works, .team-list, .socials-list, .regular-customers, .filter-list, .footer-contacts {
+.list, .main-navigation, .contacts-navigation, .mobile-menu-socials, .advantages, .applications, .team-list, .socials-list, .regular-customers, .filter-list, .works, .footer-contacts {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -656,12 +656,6 @@ img {
 }
 
 /* advantages */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .advantages-container {
-    width: 768px;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages {
     display: -webkit-box;
@@ -757,26 +751,26 @@ img {
 
 /* what we do */
 @media screen and (max-width: 1199px) {
-  .works-section {
+  .applications-section {
     display: none;
   }
 }
 
-.works {
+.applications {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.works__card {
+.applications__card {
   position: relative;
 }
 
-.works__card:not(:first-child) {
+.applications__card:not(:first-child) {
   margin-left: 30px;
 }
 
-.works__overlay {
+.applications__overlay {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -793,7 +787,7 @@ img {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.works__overlay-item {
+.applications__overlay-item {
   font-family: var(--main-font-family);
   font-weight: 700;
   font-size: 14px;
@@ -804,12 +798,6 @@ img {
 }
 
 /* our team */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .team-container {
-    width: 768px;
-  }
-}
-
 .team-section {
   background: var(--third-background-color);
 }
