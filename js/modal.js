@@ -11,6 +11,6 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
-    mobileScroll.classList.toggle("stop-scroll");
+    // mobileScroll.classList.toggle("stop-scroll");
   }
 })();
